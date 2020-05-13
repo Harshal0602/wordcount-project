@@ -1,0 +1,11 @@
+<h1>There are {{count}} words</h1>
+<a href="{% url 'home' %}">Count again</a>
+<h1>Given:</h1>
+{{fulltext}}
+
+<h1>Word Count:</h1>
+{% for word,counttotal in sortednumbers %}
+
+{{word}} : {{counttotal}} <br>
+
+{% endfor %}
